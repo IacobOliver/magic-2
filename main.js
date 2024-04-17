@@ -1,4 +1,5 @@
 
+
 function scrollToId(id) {
   $("html, body").animate(
     {
@@ -7,6 +8,7 @@ function scrollToId(id) {
     500
   );
 }
+
 var swiper = new Swiper(".alegi-swiper", {
   lazy: true,
   preloadImages: false,
@@ -23,6 +25,7 @@ var swiper = new Swiper(".alegi-swiper", {
     delay: 2000,
   },
 });
+
 var swiper = new Swiper(".traineri-swiper", {
   lazy: true,
   preloadImages: false,
@@ -38,3 +41,5 @@ var swiper = new Swiper(".traineri-swiper", {
     delay: 2000,
   },
 });
+
+
