@@ -277,7 +277,10 @@ hr {
   width: 30%;
   height: 5px;
   border: none;
-  margin-left: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 21px;
+  margin-bottom: 21px;
 }
 
 .div_1_citeste_mai_mult {
@@ -317,10 +320,12 @@ hr {
 /* SECTION Checkbox Dezvolti */
 .section-flex {
   display: flex;
-
+  align-items: start;
   justify-content: space-between;
   padding-left: 164px;
   padding-right: 164px;
+  margin-top: 40px;
+  /* background-color: purple; */
 }
 
 .dezvolti {
@@ -470,14 +475,12 @@ hr {
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
+  margin: 0px;
   line-height: normal;
 }
 
 .traineri p {
-  /* font-size: 20px;
-  text-align: center;
-  width: 90%;
-  margin: 40px auto; */
+ margin-top: 0px;
   color: #FFF;
   text-align: center;
   font-family: Poppins;
@@ -485,6 +488,7 @@ hr {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: 442px;
 }
 
 
@@ -761,7 +765,7 @@ hr {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  max-width: 442px;
+  max-width: 100%
 }
 
 @media screen and (max-width: 1250px) {
@@ -976,8 +980,24 @@ hr {
 
 /* PAGINA DESPRE */
 .despre {
-  margin-top: 10%;
-  width: 400px;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+}
+
+.despre-noi-video-holder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  height: 733px;
+  width: 480px;
+  border-radius: 20px;
+  /* background-color: red; */
+  box-shadow: 1px 0px 5px 3px #ebbf44;
+   clip-path: inset(0px -40px -40px 0px) 
 }
 
 .despre img {
@@ -989,11 +1009,17 @@ hr {
 }
 
 .despre h2 {
-  color: #ebbf44;
-  text-transform: uppercase;
-  font-size: 32px;
-  font-weight: normal;
+  color: #EBBF44;
   text-align: center;
+  font-family: K2D;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 368px;
+  text-align: center;
+  align-self: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -1182,7 +1208,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap:16px;
+  gap: 16px;
 }
 
 .menu-footer li {
@@ -1207,7 +1233,7 @@ footer {
 .footer-social {
   display: flex;
   align-items: center;
-  gap : 39px;
+  gap: 39px;
 }
 
 
@@ -1240,53 +1266,60 @@ footer {
 
 /* Mixin */
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7)); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
- .slider-holder{
+
+.slider-holder {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 70px;
- }
+}
 
 .slider {
-	box-shadow: 0 10px 20px -5px rgba(255, 255, 255, .125); /* Invert shadow color */
-	height: fit-content;
-	margin: auto;
-	overflow: hidden;
-	position: relative;
+  box-shadow: 0 10px 20px -5px rgba(255, 255, 255, .125);
+  /* Invert shadow color */
+  height: fit-content;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
   width: 80%;
 }
 
 .slider::before,
 .slider::after {
-	background: linear-gradient(to right,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* Invert gradient colors */
-	content: "";
-	height: 100%;
-	position: absolute;
-	width: 200px;
-	z-index: 2;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Invert gradient colors */
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
 }
 
 .slider::after {
-	right: 0;
-	top: 0;
-	transform: rotateZ(180deg);
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
 .slider::before {
-	left: 0;
-	top: 0;
+  left: 0;
+  top: 0;
 }
 
 .slide-track {
-	animation: scroll 15s linear infinite;
-	display: flex;
-  gap:15px;
+  animation: scroll 15s linear infinite;
+  display: flex;
+  gap: 15px;
 }
 
 .slide {
-	border-radius: 19px;
+  border-radius: 19px;
 }
-
