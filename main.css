@@ -459,6 +459,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-color: green; */
 
 }
 
@@ -496,6 +497,16 @@ hr {
 
 }
 
+.thubnail-trainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .maskCoverTraineri {
   background: linear-gradient(90deg, rgb(1, 1, 1) 12%, rgba(38, 164, 215, 0) 50%, rgb(0, 0, 0) 88%);
   width: 100%;
@@ -522,6 +533,11 @@ hr {
   justify-content: center;
   align-items: center;
   z-index: -1;
+  width: 40%;
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
 }
 
 .trainer-slide img {
@@ -529,13 +545,9 @@ hr {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 25px ;
+  border-radius: 25px;
 }
 
-.trainer-slide {
-  width: 40%;
-  position: relative;
-}
 
 .trainer-info {
   position: absolute;
@@ -625,14 +637,14 @@ hr {
 }
 
 /* SECTION TRAINER PRESENTATION */
-.trainer-presentation{
+.trainer-presentation {
   width: 100vw;
-  height: 100vh;  
+  height: 100vh;
 }
 
-.list-trainers{
+.list-trainers {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   padding-left: 164px;
   padding-right: 164px;
   display: flex;
@@ -640,16 +652,17 @@ hr {
   justify-content: space-evenly;
   flex-direction: row;
   gap: 20px;
- 
+  /* background-color: red; */
 }
 
-.list-trainers .video-trainer{
+.list-trainers .video-trainer {
   position: relative;
-  width: 336.153px;
-  height: 597.762px;
-  border-radius: 20.958px;
+  width: 326.153px;
+  height: 523.762px;
+  border-radius: 44.958px;
   box-shadow: -9.78px 9.78px 16.627px 0px rgba(0, 0, 0, 0.25);
   overflow: hidden;
+  /* background-color: blue; */
 }
 
 /* SECTION Alegi*/
@@ -720,9 +733,12 @@ hr {
 }
 
 .testimoniale-wrap h2 {
+  color: #FFF;
+  font-family: K2D;
   font-size: 32px;
-  text-align: left;
-  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .testimoniale-flex {
@@ -736,6 +752,16 @@ hr {
 .testimonial-text {
   width: 500px;
   text-align: left;
+}
+
+.testimonial-text p {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 442px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1139,14 +1165,15 @@ hr {
 /* FOOTER */
 
 footer {
-  padding: 50px 20px;
-  border-top: 1px solid #a1a1a1;
+  padding: 25px 25px;
+  border-top: 1px solid #ebbf44;
   text-align: center;
 }
 
 .footer-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1200px;
   margin: auto;
 }
@@ -1155,19 +1182,22 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: left;
+  gap:16px;
 }
 
 .menu-footer li {
   list-style: none;
-  padding-top: 20px;
 }
 
 .menu-footer a {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
   text-decoration: none;
-  color: white;
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 0.7rem;
 }
 
 .menu-footer a:hover {
@@ -1177,16 +1207,9 @@ footer {
 .footer-social {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 300px;
-  width: 90%;
-
-  padding-top: 30px;
+  gap : 39px;
 }
 
-.logo-magic {
-  padding: 60px 0;
-}
 
 @media screen and (max-width: 1250px) {
   .footer-flex {
@@ -1212,3 +1235,58 @@ footer {
     margin: auto;
   }
 }
+
+/* index.html carrousel */
+
+/* Mixin */
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7)); }
+}
+ .slider-holder{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+ }
+
+.slider {
+	box-shadow: 0 10px 20px -5px rgba(255, 255, 255, .125); /* Invert shadow color */
+	height: fit-content;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+  width: 80%;
+}
+
+.slider::before,
+.slider::after {
+	background: linear-gradient(to right,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* Invert gradient colors */
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+}
+
+.slider::after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+
+.slider::before {
+	left: 0;
+	top: 0;
+}
+
+.slide-track {
+	animation: scroll 15s linear infinite;
+	display: flex;
+  gap:15px;
+}
+
+.slide {
+	border-radius: 19px;
+}
+
