@@ -279,8 +279,8 @@ hr {
   border: none;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 21px;
-  margin-bottom: 21px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .div_1_citeste_mai_mult {
@@ -480,7 +480,7 @@ hr {
 }
 
 .traineri p {
- margin-top: 0px;
+  margin-top: 0px;
   color: #FFF;
   text-align: center;
   font-family: Poppins;
@@ -980,9 +980,9 @@ hr {
 
 /* PAGINA DESPRE */
 .despre {
- display: flex;
- flex-direction: column;
- position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .despre-noi-video-holder {
@@ -997,7 +997,7 @@ hr {
   border-radius: 20px;
   /* background-color: red; */
   box-shadow: 1px 0px 5px 3px #ebbf44;
-   clip-path: inset(0px -40px -40px 0px) 
+  clip-path: inset(0px -40px -40px 0px)
 }
 
 .despre img {
@@ -1039,15 +1039,22 @@ hr {
 .cursuri {
   text-align: center;
   width: 40%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .cursuri h2 {
-  font-size: 32px;
+  color: #FFF;
   text-align: center;
-  color: white;
-  margin-top: 0;
-  font-weight: bold;
+  font-family: K2D;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 368px;
+  margin: 0px;
 }
 
 .btn-curs {
@@ -1055,18 +1062,26 @@ hr {
   align-items: center;
   background-color: #383333;
   color: white;
-  padding: 10px 20px;
   text-decoration: none;
   border-radius: 20px;
   font-size: 24px;
   font-weight: normal;
   border: 2px solid #383333;
-  width: 180px;
-  margin: 20px auto;
+  margin-bottom: 10px;
+  width: 224px;
+  height: 72px;
+  padding: 0px 15px;
+  gap: 8px;
+
 }
 
 .btn-curs p {
-  margin: 10px;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media screen and (max-width: 900px) {
