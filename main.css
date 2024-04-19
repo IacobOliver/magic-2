@@ -7,11 +7,22 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   scrollbar-width: none;
-  /* Firefox */
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 
@@ -807,16 +818,16 @@ hr {
 /* Form Section*/
 
 .formular {
-  padding: 60px 0;
-  text-align: center;
+
 }
 
 .formular-text h2 {
   width: 90%;
-  margin: 30px auto;
   font-size: 28px;
   font-weight: normal;
   color: white;
+  margin: 0px;
+  font-weight: 400;
 }
 
 .formular-div {
@@ -824,14 +835,15 @@ hr {
 }
 
 .input-box {
-  box-shadow: 0 0 10px #ebbf44;
   background-color: transparent;
-  border: #ebbf44 2px solid;
-  border-radius: 50px;
+  border :#ebbf4480 2px solid;
+  border-radius: 8px;
   padding: 10px 50px;
   color: gray;
   text-align: center;
   font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 25px;;
 }
 
 .button-form {
@@ -843,7 +855,7 @@ hr {
   border-radius: 50px;
   font-size: 24px;
   font-weight: 600;
-  margin-top: 50px;
+  margin-top: 10px;
   border: #ebbf44;
 }
 
@@ -861,7 +873,7 @@ hr {
 /* Customize the label (the container) */
 .container2 {
   width: 80%;
-  margin: 50px auto 0;
+  margin: 50px 0px 0px;
   display: block;
   position: relative;
   padding-left: 50px;
@@ -941,41 +953,76 @@ hr {
 
 /* PAGINA SUCCES*/
 
-.succes {
-  background-image: url("img/succes.jpg");
-  background-size: cover;
+.success {
+  background-image: url("img/baloon.jpg");
+  background-size:contain;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-position: center;
+  backdrop-filter: 90%;
+  height: 1049px;
+  position: relative;
+  z-index: 0;
 }
 
-.succes-text {
+.cover{
+  /* background-color: red;
+  opacity: 50%; */
+  background: linear-gradient(180deg, rgb(1, 1, 1, 0) 1%, rgba(1, 1, 1, 0.7) 50%, rgb(0, 0, 0, 0) 95%);
+  position: absolute;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  z-index:-1;
+}
+
+.success-text {
   padding-top: 20%;
   width: 90%;
   margin: auto;
   color: white;
   font-size: 20px;
   font-weight: 600;
-  text-align: center;
+  font-family: Poppins;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.succes-text h2 {
+.success-text img{
+  opacity: 80%; 
+  transition-duration: 300ms;
+  border-radius: 130%;
+}
+
+.success-text img:hover{
+  opacity: 100%;
+}
+
+.success-text h2 {
   font-size: 24px;
   text-align: center;
   font-weight: normal;
   text-transform: uppercase;
+  width: 364px;
+ 
+  font-weight: 300;
+  
 }
 
-.btn-succes {
+.btn-success {
   background-color: transparent;
   color: white;
-  padding: 14px 40px;
+  padding: 10px 20px;
   display: inline-block;
   text-decoration: none;
-  border-radius: 50px;
-  font-size: 24px;
-  font-weight: 600;
-  margin-top: 50px;
-  border: 2px solid white;
+  border-radius: 19px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 25px;
+  font-family: Poppins;
+  border: 1px solid white;
+  
 }
 
 /* PAGINA DESPRE */
