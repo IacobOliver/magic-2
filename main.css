@@ -1101,19 +1101,78 @@ hr {
 
 .universul {
   padding: 50px 0;
-  text-align: center;
   font-size: 20px;
   color: white;
-  width: 90%;
-  margin: auto;
+  padding-left: 164px;
+  padding-right: 164px
 }
 
 .universul h2 {
-  color: #ebbf44;
+  color: #EBBF44;
+  font-family: K2D;
   font-size: 32px;
-  font-weight: normal;
-  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top : 0px;
+  margin-bottom: 50px;
 }
+
+.universul-option {
+  display: flex;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.universul-option-p {
+  width: 731px;
+  height: 80px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.universul-option-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.universul-option-logo-p {
+  width: 160px;
+  height: 47px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.universul-image-holder {
+  background-color: red;
+  width: 109px;
+  height: 109px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.universul-image-holder img {
+  width: 100%;
+  height: 100%;
+}
+
+
 
 /* PAGINA CONTACT */
 
