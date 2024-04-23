@@ -39,10 +39,10 @@
   <nav id="hehe" class="navBarHolder">
     <div class="navbar">
       <div class="container nav-container">
-        <a href="index.html" style="padding: 0%; margin-top: 10px;">
-          <img src="img/MagicAcademyAlb 1.png" alt="magic" width="83" height="53" class="logo" />
+        <a href="index.html" class="magic-Logo">
+          <img src="img/MagicAcademyAlb 1.png" alt="magic" width="83" height="53" />
         </a>
-        <input class="checkbox content-m" type="checkbox" name="" id="" />
+        <input class="checkbox content-m" type="checkbox" />
         <h2 class="menu-title content-m">MENIU</h2>
         <div class="hamburger-lines content-m">
           <span class="line line1"></span>
@@ -50,10 +50,9 @@
           <span class="line line3"></span>
         </div>
         <div class="menu-items">
-          <a href="despre.html">DESPRE ACADEMIE</a>
-           
-          <a href="universul.html">EXPOREAZĂ UNIVERSUL MAGIC</a>
-          <a href="contact.html">CONTACT</a>
+          <a class="header-button" href="despre.html">DESPRE ACADEMIE</a>
+          <a class="header-button" href="universul.html">EXPOREAZĂ UNIVERSUL MAGIC</a>
+          <a class="header-button" href="contact.html">CONTACT</a>
         </div>
       </div>
     </div>
@@ -70,15 +69,17 @@
 
 
       <div id="headerDetails">
-        <h2 style="font-size: 38px; font-family: K2D; font-weight: 700;">Cursuri de formare și perfecționare Beauty &
+        <div class="semi-title">DESPRE NOI</div>
+        <h2>Cursuri de formare și perfecționare Beauty &
           more</h2>
-        <hr />
-        <p style="font-size: 20px; font-family: Poppins; font-weight: 300;">
+        <hr class="header-hr" />
+        <p class="header-description">
           Vrei să fii în top, atât profesional, cât și personal? Hai să-ți arătăm cum îți poți amplifica potențialul
           la maxim!
         </p>
         <div class="div_1_citeste_mai_mult">
           <span onclick="scrollToId('div_2');">Află mai multe</span>
+          <img onclick="scrollToId('div_2');" src="img/sageata-jos.png" width="64" height="64" />
         </div>
       </div>
     </div>
@@ -142,7 +143,7 @@
           individ și ca profesionist.
         </p>
         <div class="swiper traineri-swiper">
-          <div class="maskCoverTraineri"></div>
+          <!-- <div class="maskCoverTraineri"></div> -->
 
           <div class="swiper-wrapper">
             <div id="thumbnail-ana" class="swiper-slide trainer-slide">
@@ -155,6 +156,7 @@
               <div class="thubnail-trainer">
                 <img id="thumbnail-ana" src="img\trainers\ana.jpg" alt="alegi" width="257" height="388"
                   loading="lazy" />
+
                 <div class="trainer-info">
                   <div class="playButton">
                     <svg style="position: absolute; margin-left:5px" xmlns="http://www.w3.org/2000/svg" width="22"
@@ -274,6 +276,39 @@
         <div data-video="2" class="startVideo"
           style=" width: 324px; height: 519px; z-index: 10; position: absolute; top: 0; left: 0;"></div>
       </div>
+    </div>
+  </section>
+
+  <section class="alegeri">
+    <div class="swiper alegi-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide alegi-slide video-trainer">
+          <iframe src="videos/trainer1.mp4" frameborder="0" style="width:100%; height:100%;"></iframe>
+          <div data-video="0" class="startVideo"
+            style=" width:100%; height:100%; z-index: 10; position: absolute; top: 0; left: 0;">
+          </div>        </div>
+        <div class="swiper-slide alegi-slide video-trainer">
+          <iframe src="videos/trainer1.mp4" frameborder="0" style="width:100%; height:100%;"></iframe>
+          <div data-video="0" class="startVideo"
+            style=" width:100%; height:100%; z-index: 10; position: absolute; top: 0; left: 0;">
+          </div>        </div>
+        <div class="swiper-slide alegi-slide video-trainer">
+          <iframe src="videos/trainer1.mp4" frameborder="0" style="width:100%; height:100%;"></iframe>
+          <div data-video="0" class="startVideo"
+            style=" width:100%; height:100%; z-index: 10; position: absolute; top: 0; left: 0;">
+          </div>        </div>
+        <div class="swiper-slide alegi-slide video-trainer">
+          <iframe src="videos/trainer1.mp4" frameborder="0" style="width:100%; height:100%;"></iframe>
+          <div data-video="0" class="startVideo"
+            style=" width:100%; height:100%; z-index: 10; position: absolute; top: 0; left: 0;">
+          </div>        </div>
+        <div class="swiper-slide alegi-slide video-trainer">
+          <iframe src="videos/trainer1.mp4" frameborder="0" style="width:100%; height:100%;"></iframe>
+          <div data-video="0" class="startVideo"
+            style=" width:100%; height:100%; z-index: 10; position: absolute; top: 0; left: 0;">
+          </div>        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 

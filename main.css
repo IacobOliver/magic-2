@@ -60,6 +60,15 @@ input[type=number] {
 
 }
 
+.magic-Logo {
+  padding: 0%;
+  display: flex;
+}
+
+.magic-Logo img {
+  margin-top: 0px;
+}
+
 .navbar {
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.3);
@@ -82,15 +91,21 @@ input[type=number] {
   list-style: none;
 }
 
-.navbar .nav-container a {
+.header-button {
   text-decoration: none;
   color: white;
-  /* font-weight: 500; */
   font-size: 11px;
   padding: 0.8rem;
 }
 
-.navbar .nav-container a:hover {
+.header-description {
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 300;
+  display: flex;
+}
+
+.header-button:hover {
   font-weight: bolder;
 }
 
@@ -135,12 +150,34 @@ input[type=number] {
 header {
   min-height: 600px;
   padding-left: 164px;
+  /* background-color: red; */
 }
 
 #headerDetails {
   z-index: 10;
   width: 541px;
+}
 
+#headerDetails h2 {
+  font-size: 38px;
+  font-family: K2D;
+  font-weight: 700;
+}
+
+.semi-title {
+  display: none;
+  height: 25px;
+  color: #FFF;
+  text-align: center;
+  font-family: K2D;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.div_1_citeste_mai_mult img {
+  display: none;
 }
 
 .header-wrap {
@@ -200,7 +237,7 @@ hr {
   width: 50%;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .dezvolti h2 {
@@ -218,8 +255,8 @@ hr {
   margin-top: 40px;
   width: fit-content;
   height: fit-content;
-  display: flex;  
-  flex-direction : column;
+  display: flex;
+  flex-direction: column;
 }
 
 .inputHolder {
@@ -343,7 +380,6 @@ hr {
   flex-direction: column;
   align-items: center;
   /* background-color: green; */
-
 }
 
 .traineri h2 {
@@ -376,7 +412,11 @@ hr {
   width: 700px;
   height: 100%;
   position: relative;
+}
 
+.swiper-wrapper{
+  display: flex;
+  
 }
 
 .thubnail-trainer {
@@ -547,6 +587,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40%;
 }
 
 .alegi-slide img {
@@ -554,21 +595,21 @@ hr {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .alegi-slide {
-  width: 60%;
+  
 }
 
 /* section Testimoniale */
 
 .testimoniale {
-  padding: 80px 20px 40px;
+  padding-inline: 164px
 }
 
 .testimoniale-wrap {
-  width: 1200px;
-  margin: auto;
+  width: 100%
 }
 
 .testimoniale-wrap h2 {
@@ -1174,7 +1215,7 @@ footer {
     width: 40%;
   }
 
-  .traineri{
+  .traineri {
     margin-top: 100px;
   }
 }
@@ -1190,11 +1231,11 @@ footer {
     align-items: center;
   }
 
-  .dezvolti-flex form{
+  .dezvolti-flex form {
     align-items: center;
   }
 
-  .submit-btn{
+  .submit-btn {
     align-self: center;
     justify-self: center;
   }
@@ -1221,9 +1262,14 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+
   .navbar {
     padding-left: 84px;
     padding-right: 84px;
+  }
+
+  .magic-Logo img {
+    margin-top: 13px;
   }
 
   .contact {
@@ -1258,7 +1304,7 @@ footer {
     padding-right: 84px;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
 
   .traineri {
@@ -1271,8 +1317,8 @@ footer {
   }
 
   .traineri-swiper {
-    width: 90%;
-    margin: auto;
+    width: 100vw;
+    height: fit-content;
   }
 
   .dezvolti h2 {
@@ -1282,11 +1328,12 @@ footer {
   header {
     height: 100vh;
     max-width: fit-content;
+    padding-inline: 84px;
+    /* background-color: green ; */
   }
 
   .header-wrap {
-    width: 90%;
-    margin: auto;
+    width: 100%;
   }
 
   .container {
@@ -1297,15 +1344,17 @@ footer {
 
   .nav-container {
     display: block;
+    align-items: center;
   }
 
   .menu-title {
+    height: fit-content;
     position: absolute;
-    text-align: right;
+    right: 65px;
+    top: 25px;
     font-size: 20px;
     font-weight: normal;
-    right: 65px;
-    top: 10px;
+    margin: 0px;
   }
 
   .nav-container .hamburger-lines {
@@ -1402,15 +1451,23 @@ footer {
   .content-m {
     display: block;
   }
+
+  .list-trainers {
+   padding-inline : 84px;
+  }
+
+  .swiper-wrapper{
+    height: fit-content;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .section-flex {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 
-  .navbar{
+  .navbar {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -1483,9 +1540,95 @@ footer {
   .testimoniale-wrap hr {
     margin: auto;
   }
+
+  .trainer-slide {
+   height: 270px;
+  }
+
+  .trainer-info {
+    bottom: 90px;
+  
+  }
 }
 
-@media screen and (max-width : 500px){
+@media screen and (max-width : 600px) {
+  .header-hr {
+    display: flex;
+  }
+
+
+  #headerDetails {
+    width: fit-content;
+    margin-top: 100px;
+  }
+
+  #headerDetails h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-block: 10px;
+  }
+
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+  }
+
+  .magic-Logo {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width : 500px) {
+  .menu-title {
+    font-size: 15px;
+    top: 28px;
+  }
+
+  .div_1_citeste_mai_mult {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .div_1_citeste_mai_mult span {
+    display: none;
+  }
+
+  .div_1_citeste_mai_mult img {
+    display: flex;
+  }
+
+  .header-hr {
+    display: none;
+  }
+
+  .header-description {
+    display: none;
+  }
+
+  #headerDetails {
+    width: fit-content;
+    margin-top: 0px;
+    margin-bottom: 150px;
+  }
+
+  .semi-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  header {
+    padding-inline: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
   hr {
     width: 70%;
   }
@@ -1496,7 +1639,28 @@ footer {
     font-size: 16.5px;
   }
 
-  .traineri p{
+  .traineri p {
     width: fit-content;
+  }
+
+  .list-trainers {
+    padding-inline : 36px;
+   }
+
+   .trainer-info {
+    bottom: 40px;
+  }
+
+  .trainer-info hr {
+    margin-block:10px;
+  }
+
+  .trainer-info h3 {
+    margin:7px;
+    font-size: 20px;;
+  }
+
+  .trainer-info p {
+    font-size: 18px;;
   }
 }
