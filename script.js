@@ -9,9 +9,10 @@ const manageTraineriVideos = () =>{
  
 
     //pause and play video from carrousel
-    let buttons = document.querySelectorAll(".startVideo");
+    let buttons = document.querySelectorAll(".start-video");
     buttons.forEach(function (button) {
         button.addEventListener("click", function () {
+            console.log("clikc on it")
             let videoIndex = parseInt(this.getAttribute("data-video"));
             // Select the corresponding iframe based on the index
             let iframe = document.querySelectorAll(".video-trainer iframe")[videoIndex];
