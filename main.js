@@ -29,17 +29,18 @@ var swiper = new Swiper(".alegi-swiper", {
 var swiper = new Swiper(".traineri-swiper", {
   lazy: true,
   preloadImages: false,
-  loop: true,
   slidesPerView: "auto",
+  // loop:true,
   centeredSlides: true,
+  initialSlide: 1,
   spaceBetween: 10,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 2000,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  // },
 });
 
 

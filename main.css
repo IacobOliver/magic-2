@@ -444,7 +444,7 @@ hr {
   width: 200px;
   position: absolute;
   z-index: 2;
-  left:0px
+  left: 0px
 }
 
 .maskCoverTraineri::before {
@@ -454,13 +454,18 @@ hr {
   width: 200px;
   position: absolute;
   z-index: 2;
-  right:0px
+  right: 0px
 }
 
 .playButton {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.trainer-video{
+  width:336px;
+   height:600px
 }
 
 
@@ -831,12 +836,12 @@ hr {
 }
 
 .logo-magic {
-  width:135px;
-  height:83px;
+  width: 135px;
+  height: 83px;
 }
 
-.contact-icon-text img{
-  display:none;
+.contact-icon-text img {
+  display: none;
 }
 
 .success-text {
@@ -909,6 +914,12 @@ hr {
   /* background-color: red; */
   box-shadow: 1px 0px 5px 3px #ebbf44;
   clip-path: inset(0px -40px -40px 0px)
+}
+
+.despre-noi-video-holder iframe {
+  width: 1400px;
+  height: 1200px;
+  z-index: -1;
 }
 
 .despre img {
@@ -1256,8 +1267,8 @@ footer {
 
 .slide {
   border-radius: 19px;
-  height:380px;
-   width:280px; 
+  height: 380px;
+  width: 280px;
 }
 
 @media screen and (max-width: 1350px) {
@@ -1272,7 +1283,7 @@ footer {
 
 @media screen and (max-width: 1250px) {
   .universul h2 {
-   text-align: center;
+    text-align: center;
   }
 
   .contact {
@@ -1280,7 +1291,7 @@ footer {
     align-items: center;
   }
 
-  .manager-flex{
+  .manager-flex {
     width: fit-content;
     padding: 0px;
     margin: 0px;
@@ -1332,8 +1343,8 @@ footer {
     font-size: 15px;
   }
 
-  .testimonial-text hr{
-    margin-block : 1px; 
+  .testimonial-text hr {
+    margin-block: 1px;
   }
 
   .testimonial-text {
@@ -1344,7 +1355,7 @@ footer {
     flex-direction: column;
   }
 
-  .universul-option-p{
+  .universul-option-p {
     text-align: center;
     width: 100%;
   }
@@ -1354,7 +1365,7 @@ footer {
   .testimoniale-flex {
     width: 100%;
     flex-direction: column;
-    gap:0px;
+    gap: 0px;
   }
 
   .testimonial-text {
@@ -1367,7 +1378,7 @@ footer {
     height: 100%
   }
 
-  .inverse{
+  .inverse {
     flex-direction: column-reverse;
   }
 
@@ -1386,26 +1397,26 @@ footer {
     padding-inline: 84px;
   }
 
-  .contact-icon-text{
+  .contact-icon-text {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-  .contact-icon-text img{
-    display:flex;
+  .contact-icon-text img {
+    display: flex;
   }
 
   .logo-magic {
-    width:105px;
-    height:68px;
+    width: 105px;
+    height: 68px;
   }
 
-  .contact img{
-    margin-top: 6px; 
-    margin-inline:4px;
-   
+  .contact img {
+    margin-top: 6px;
+    margin-inline: 4px;
+
   }
 
   .navbar {
@@ -1450,7 +1461,7 @@ footer {
   .formular-div form {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
 
   .formular-text h2 {
@@ -1630,14 +1641,14 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .universul-option-p{
-    display:none;
+  .universul-option-p {
+    display: none;
   }
 
   .testimonial-text p {
     font-size: 17px;
   }
-  
+
   .testimoniale {
     padding-inline: 36px
   }
@@ -1694,6 +1705,7 @@ footer {
   .despre {
     width: 100%;
     margin: auto;
+    align-items: center;
   }
 
   .despre img {
@@ -1769,11 +1781,21 @@ footer {
   .video-trainer iframe {
     height: 50%;
   }
+
+  .despre-noi-video-holder{
+    height: fit-content;
+    width: 120%;
+  }
+
+  .despre-noi-video-holder iframe {
+    width: 1100px;
+    height: 500px;
+  }
 }
 
 @media screen and (max-width : 500px) {
   .footer-social {
-    gap:15px;
+    gap: 15px;
   }
 
   .slider::before,
@@ -1866,13 +1888,26 @@ footer {
   }
 
   .slide {
-    height:260px;
-     width:180px; 
+    height: 260px;
+    width: 180px;
   }
 
   .maskCoverTraineri::after,
-  .maskCoverTraineri::before  {
+  .maskCoverTraineri::before {
     width: 100px;
   }
-  
+
+  .despre h2 {
+    font-size: 28px;
+  }
+
+  .traineri h2 {
+    font-size: 28px;
+  }
+
+  .trainer-video{
+    width:190px;
+     height:450px
+  }
+
 }

@@ -8,8 +8,9 @@ const manageTraineriVideos = () =>{
     });
  
 
-    //pause and play video from carrousel
+    //pause and play video the three videos on index
     let buttons = document.querySelectorAll(".start-video");
+    console.log(buttons)
     buttons.forEach(function (button) {
         button.addEventListener("click", function () {
             console.log("clikc on it")
@@ -27,11 +28,36 @@ const manageTraineriVideos = () =>{
                 // Play the video
                 videoElement.play();
             } else {
-                videoElement.pause();
+                videoElement.pause(); 
             }
 
         });
     });
+}
+
+
+const manageCarrouselTraineriVideo = () =>{
+    let buttons = document.querySelectorAll(".carrousel-trainer-button")
+    
+
+    buttons.forEach((button) =>{
+        button.addEventListener(("click"), function(button){
+            button.target.parentElement.querySelector("img").style.display = "none"
+            button.target.parentElement.querySelector(".trainer-info").style.display = "none"
+
+            let iframe = button.target.parentElement.parentElement.querySelector("iframe");
+            if (iframe && iframe.src.includes("youtube.com")) {
+                // Extract video ID from the src attribute
+                let videoId = iframe.src.split("embed/")[1].split("?")[0];
+                // Construct the YouTube player URL
+                let playerUrl = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+                // Update the src attribute to start the video playback
+                iframe.setAttribute("src", playerUrl);
+            }
+          
+        })
+    })
+    
 }
 
 
@@ -50,6 +76,7 @@ slider.addEventListener('animationiteration', () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     manageTraineriVideos();
+    manageCarrouselTraineriVideo();
 
 });
 
