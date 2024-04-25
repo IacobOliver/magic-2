@@ -16,6 +16,7 @@ body {
 .warningMessage{
   /* display: none; */
   min-height: 20px;
+  max-width: 430px;
   color: lightcoral;
   display: flex;
   align-items: center;
@@ -282,7 +283,7 @@ hr {
 .dezvolti-wrap {
   position: relative;
   background-color: #414141;
-  height: 30px;
+  max-height: 30px;
   min-width: 430px;
   display: flex;
   align-items: center;
@@ -455,7 +456,8 @@ hr {
   width: 200px;
   position: absolute;
   z-index: 2;
-  left: 0px
+  left: -20px;
+  top: -10px;
 }
 
 .maskCoverTraineri::before {
@@ -465,7 +467,8 @@ hr {
   width: 200px;
   position: absolute;
   z-index: 2;
-  right: 0px
+  right: -10px;
+  top: -10px;
 }
 
 .playButton {
@@ -568,21 +571,18 @@ hr {
 .trainer-presentation {
   width: 100vw;
   height: 100vh;
-  /* overflow-x: scroll; */
 }
 
 .list-trainers {
   position: relative;
   height: 80vh;
-
+  display: flex;
   padding-left: 164px;
   padding-right: 164px;
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
   gap: 20px;
-  /* background-color: red; */
 }
 
 .video-trainer iframe {
@@ -597,7 +597,7 @@ hr {
   border-radius: 44.958px;
   box-shadow: -9.78px 9.78px 16.627px 0px rgba(0, 0, 0, 0.25);
   overflow: hidden;
-  /* background-color: blue; */
+
 }
 
 /* SECTION Alegi*/
@@ -1593,7 +1593,7 @@ footer {
   }
 
   .navbar .menu-items {
-    padding-top: 120px;
+    padding-top: 200px;
     height: 100vh;
     width: 100vw;
     transform: translate(-150%);
@@ -1869,7 +1869,7 @@ footer {
   .dezvolti-wrap {
     min-width: 100%;
     height: fit-content;
-    font-size: 16.5px;
+    font-size: 13.5px;
   }
 
   .traineri p {
@@ -1922,6 +1922,10 @@ footer {
   .trainer-video{
     width:190px;
      height:450px
+  }
+
+  .trainer-presentation {
+    display:none;
   }
 
 }
