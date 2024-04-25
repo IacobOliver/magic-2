@@ -70,7 +70,7 @@
           <hr/>
 
           <div class="formular-div">
-            <form action="succes.html" style="font: Poppins;">
+            <form id="trimitere-formular" action="succes.html" style="font: Poppins;">
               <label class="content-d" >Nume Complet :</label><br>
               <input type="text" class="input-box" id="fname" name="fname" placeholder="Nume & Prenume"><br/>
 
@@ -78,7 +78,7 @@
               <input type="number" class="input-box" id="lname" name="lname" placeholder="07xx xxx xxx"><br/>
 
               <label class="content-d">Email :</label><br>
-              <input type="email" class="input-box" id="lname" name="lname" placeholder="Adresă E-mail"><br/>
+              <input type="email" class="input-box" id="email" name="email" placeholder="Adresă E-mail"><br/>
 
               <label class="container2">
                 <input type="checkbox" id="option1" name="option1" value="Declar">
@@ -87,8 +87,10 @@
                   personal și de termenii și condițiile fiind de acord să fiu contactat/ă.</label>
               </label>
 
+              <p class="warningMessage"></p>
+
               <div class="box"><br>
-                <input title="Trimite" class="button-form" type="submit" value="Trimite"></a>
+                <input id="trimitere" title="Trimite" class="button-form" type="submit" value="Trimite">
               </div>
 
             </form>
@@ -326,10 +328,6 @@
         <li><a href="termene.html">TERMENE ȘI CONDIȚII</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </div>
-
-<!-- 
-      <img src="img/MagicAcademyAlb 1.png" alt="magic academy" width="109" height="73" loading="lazy"
-        class="logo-magic content-m" /> -->
     </div>
   </footer>
 

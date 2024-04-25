@@ -13,6 +13,17 @@ body {
   display: none;
 }
 
+.warningMessage{
+  /* display: none; */
+  min-height: 20px;
+  color: lightcoral;
+  display: flex;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 20px;
+  text-align: center
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -365,7 +376,7 @@ hr {
   font-size: 24px;
   font-weight: 800;
   font-family: Poppins;
-  margin-top: 50px;
+  margin-top: 20px;
   border: #ebbf44;
 }
 
@@ -1229,12 +1240,12 @@ footer {
 }
 
 .slider {
-  box-shadow: 0 10px 20px -5px rgba(255, 255, 255, .125);
+  /* box-shadow: 0 10px 20px -5px rgba(255, 255, 255, .125); */
   height: fit-content;
   margin: 0px;
   overflow: hidden;
   position: relative;
-  width: 95%;
+  width: 100%;
 }
 
 .slider::before,
@@ -1244,7 +1255,7 @@ footer {
   content: "";
   height: 100%;
   position: absolute;
-  width: 200px;
+  width: 150px;
   z-index: 2;
 }
 
@@ -1745,7 +1756,10 @@ footer {
 
   .trainer-presentation {
     height: 50vh;
+  }
 
+  .warningMessage{
+    font-size: 13px;
   }
 }
 
